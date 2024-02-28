@@ -6,7 +6,9 @@
     <title>php-dischi-json</title>
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    
+    <!-- css -->
+    <link href="./style/style.css" rel="stylesheet">
+
     <!-- 
     Dobbiamo creare una web-app che permetta di leggere una lista di dischi presente nel nostro server.
     Stack
@@ -24,8 +26,26 @@
 <body>
 
     <div id="app">
-        <h2>{{ prova }}</h2>
-    </div>    
+        <h1 class="text-capitalize text-center p-3">{{ music }}</h1>
+
+        <div class="container d-flex justify-content-center">
+
+            <div class="row p-3">
+                <div v-for="(element, index) in listArray"
+                    class="musica col-4 text-center rounded-1">
+
+                    <figure class="mt-2">
+                        <img :src="element.poster" alt="">
+                    </figure>
+
+                    <h6>{{element.title}}</h6>
+                    <p>{{element.author}}</p>
+                    <h6>{{element.year}}</h6>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- vue cdn -->
     <script src="https://unpkg.com/vue@3"></script>

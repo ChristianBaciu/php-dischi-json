@@ -1,0 +1,30 @@
+body{
+    background-color: #1d2d3c;
+}
+
+.container{
+    width: 600px;
+}
+
+h1{
+    background-color: #06131f;
+}
+
+.musica{
+    background-color: rgba(0, 0, 0, 0.2);
+    /* border: 1px solid black; */
+    width: calc((100% / 3) - 10px);
+    margin: 5px;
+}
+
+h6{
+    font-size: 15px;
+}
+
+p{
+    font-size: 12px;
+}
+
+img{
+    width: 100%;
+}
