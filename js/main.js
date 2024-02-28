@@ -5,13 +5,17 @@ createApp({
         return{
             prova: 'ciao',
             apiUrl: 'server.php',
-            list: [ ],
+            listArray: [ ],
         }
+    },
+    mounted(){
+        this.readList()
     },
     methods:{
         readList(){
             axios.get(this.apiUrl).then((response) =>{
-                this.list = response.data
+                // logica
+                this.listArray = response.data
             })
         }
     }
