@@ -38,9 +38,9 @@
                         <img :src="element.poster" alt="">
                     </figure>
 
-                    <h6>{{element.title}}</h6>
-                    <p>{{element.author}}</p>
-                    <h6>{{element.year}}</h6>
+                    <h6>{{ element.title }}</h6>
+                    <p>{{ element.author }}</p>
+                    <h6>{{ element.year }}</h6>
 
                 </div>
             </div>
