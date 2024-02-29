@@ -9,15 +9,16 @@ createApp({
         }
     },
     mounted(){
-        this.readList()
+        this.getDischi()
     },
     methods:{
-        readList(){
+        getDischi(){
             axios.get(this.apiUrl).then((response) =>{
                 // logica
                 this.listArray = response.data
             })
-        }
+        },
+
     }
 }).mount('#app');
 

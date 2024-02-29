@@ -31,8 +31,9 @@
         <div class="container d-flex justify-content-center">
 
             <div class="row p-3">
-                <div v-for="(element, index) in listArray"
-                    class="musica col-4 text-center rounded-1">
+                <div v-for="(element, index) in listArray" :key="index"
+                    class="musica col-4 text-center rounded-1"
+                    >
 
                     <figure class="mt-2">
                         <img :src="element.poster" alt="">
